@@ -1,16 +1,16 @@
 .container {
-    width: 70%;
+    width: 100%;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #ee98a2;
+    background-color: #aa97de;
     display: flex;
     align-content: center;
 }
 
 .modal {
     margin: auto;
-    width: 400px;
+    width: 600px;
     padding-bottom: 20px;
     overflow: auto;
     border-radius: 10px;
@@ -38,8 +38,40 @@
     height: 40px;
     margin-top: 25px;
     border-radius: 7px;
-    background-color: rgb(223, 100, 100);
+    background-color: #c4b4f3;
     color: beige;
     font-size: 20px;
     font-weight: bolder;
+}
+
+.table {
+    width: 90%;
+    margin: 20px auto auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    vertical-align: center;
+}
+
+select {
+    width: 80%;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.del_edit_button {
+    color: #e5eee3;
+    background-color: #aa97de;
+    text-decoration: none;
+    margin: 5px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }

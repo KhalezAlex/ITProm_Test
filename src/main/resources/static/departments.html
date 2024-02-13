@@ -1,41 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>departments</title>
+    <title>Departments</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="modal">
-            <form class="form" th:object="${department}" method="post" th:action="@{/department}">
-                <p>форма добавления нового отдела</p>
-                <input type="text" class="inputText" placeholder="название отдела" th:field="*{name}">
-                <input type="text" class="inputText" placeholder="заметка" th:field="*{note}">
-                <input type="text" class="inputText" name="parentId" placeholder="родительский отдел">
-                <input type="submit" class="inputSubmit" value="сохранить">
-            </form>
-            <th:block th:if="${departments.size() != 0}">
-                <table class="table">
-                    <tr>
-                        <th>id</th>
-                        <th>Название</th>
-                        <th>Заметка</th>
-                        <th>^ отдел</th>
-                        <th>edit</th>
-                    </tr>
-                    <tr th:each="dept: ${departments}">
-                        <td>[[${dept.id}]]</td>
-                        <td>[[${dept.name}]]</td>
-                        <td>[[${dept.note}]]</td>
-                        <td th:if="${dept.parentDpt != null}">[[${dept.parentDpt.id}]]</td>
-                        <td th:unless="${dept.parentDpt != null}">root</td>
-                        <td><a class="a_button" th:href="@{'/department/' + ${dept.id}}">edit</a></td>
-                    </tr>
-                </table>
-            </th:block>
-
-        </div>
-    </div>
+    <div id="deptApp"></div>
+    <script src="/scripts/departments.js"></script>
 </body>
 </html>

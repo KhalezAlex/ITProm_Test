@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>admin</title>
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-$END$
+    <div class="container">
+        <div class="modal">
+            <div class="form">
+                <a class="del_edit_button" href="/departments.html">departments</a>
+                <a class="del_edit_button" href="/employees.html">employees</a>
+                <a class="del_edit_button" href="/professions.html">professions</a>
+                <form method="get" action="/service/generate">
+                    <input type="submit" value="сгенерить базу">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
