@@ -120,7 +120,8 @@ Vue.component('page-prof', {
                     '<input type="number" class="inputText" id="id" placeholder="введите id для поиска">' +
                     '<input type="button" class="inputSubmit" value="поиск" @click="findById">' +
                 '</form>' +
-            '</div>' +
+                '<a class="del_edit_button" href="/index.html">home</a>' +
+        '</div>' +
         '</div>',
     created: function() {
         profApi.get().then(result => {

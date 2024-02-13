@@ -2,7 +2,7 @@ package org.klozevitz.itprom_test.dao.department;
 
 import lombok.RequiredArgsConstructor;
 import org.klozevitz.itprom_test.exceptions.RecordNotFoundException;
-import org.klozevitz.itprom_test.model.Department;
+import org.klozevitz.itprom_test.model.entities.Department;
 import org.klozevitz.itprom_test.model.dto.DepartmentDTO;
 import org.springframework.stereotype.Service;
 

@@ -4,18 +4,13 @@ import lombok.RequiredArgsConstructor;
 import org.klozevitz.itprom_test.dao.department.IDaoDept;
 import org.klozevitz.itprom_test.dao.employee.IDaoEmployee;
 import org.klozevitz.itprom_test.dao.profession.IDaoProfession;
-import org.klozevitz.itprom_test.exceptions.RecordNotFoundException;
 import org.klozevitz.itprom_test.exceptions.WrongArgumentsException;
-import org.klozevitz.itprom_test.model.Department;
-import org.klozevitz.itprom_test.model.Employee;
-import org.klozevitz.itprom_test.model.Profession;
+import org.klozevitz.itprom_test.model.entities.Employee;
 import org.klozevitz.itprom_test.model.dto.DepartmentDTO;
 import org.klozevitz.itprom_test.model.dto.EmployeeDTO;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 

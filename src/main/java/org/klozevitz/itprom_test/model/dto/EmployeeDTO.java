@@ -2,7 +2,7 @@ package org.klozevitz.itprom_test.model.dto;
 
 import lombok.Builder;
 import lombok.Data;
-import org.klozevitz.itprom_test.model.Employee;
+import org.klozevitz.itprom_test.model.entities.Employee;
 
 @Data
 @Builder

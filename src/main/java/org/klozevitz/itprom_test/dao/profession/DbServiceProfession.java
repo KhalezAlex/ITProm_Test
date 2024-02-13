@@ -2,7 +2,7 @@ package org.klozevitz.itprom_test.dao.profession;
 
 import lombok.RequiredArgsConstructor;
 import org.klozevitz.itprom_test.exceptions.RecordNotFoundException;
-import org.klozevitz.itprom_test.model.Profession;
+import org.klozevitz.itprom_test.model.entities.Profession;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

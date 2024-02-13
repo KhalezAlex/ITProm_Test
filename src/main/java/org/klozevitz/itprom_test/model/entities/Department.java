@@ -1,4 +1,4 @@
-package org.klozevitz.itprom_test.model;
+package org.klozevitz.itprom_test.model.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -2,12 +2,9 @@ package org.klozevitz.itprom_test.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.klozevitz.itprom_test.dao.profession.IDaoProfession;
-import org.klozevitz.itprom_test.exceptions.RecordNotFoundException;
-import org.klozevitz.itprom_test.model.Profession;
-import org.klozevitz.itprom_test.model.dto.DepartmentDTO;
+import org.klozevitz.itprom_test.model.entities.Profession;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
