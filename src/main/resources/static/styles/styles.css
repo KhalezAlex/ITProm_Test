@@ -1,0 +1,45 @@
+.container {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ee98a2;
+    display: flex;
+    align-content: center;
+}
+
+.modal {
+    margin: auto;
+    width: 400px;
+    padding-bottom: 20px;
+    overflow: auto;
+    border-radius: 10px;
+    background-color: rgb(227, 227, 227);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputText {
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.inputSubmit {
+    width: 80%;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 7px;
+    background-color: rgb(223, 100, 100);
+    color: beige;
+    font-size: 20px;
+    font-weight: bolder;
+}
